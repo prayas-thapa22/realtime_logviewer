@@ -17,8 +17,13 @@ const quotes = [
   "That’s a lot of pie for a deputy.",
   "Sometimes my arms bend back.",
   "We live inside a dream.",
-  "It is happening again."
-  
+  "It is happening again.",
+  "I have no idea where this will lead us, but I have a definite feeling it will be a place both wonderful and strange.",
+  "There's a sort of evil out there. Something very, very strange in these old woods.",
+  "Every day, once a day, give yourself a present. Don't plan it. Don't wait for it. Just let it happen naturally.",
+  "Black as midnight on a moonless night.",
+  "This must be where pies go when they die."
+
 ];
 //defining each warning level
 const levels = ["INFO", "WARN", "ERROR"];

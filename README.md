@@ -1,6 +1,6 @@
 # realtime_logviewer
 ## Overview
-This project is a real-time log viewer web application. It uses a WebSocket server to stream logs to the browser. Users can see live logs in real-time, pause/resume the log feed, and clear the log display. The logs are randomly generated quotes from*Twin Peaks with levels like INFO, WARN, and ERROR.
+This project is a real-time log viewer web application. It uses a WebSocket server to stream logs to the browser. Users can see live logs in real-time, pause/resume the log feed, and clear the log display. The logs are randomly generated quotes from Twin Peaks with levels like INFO, WARN, and ERROR.
 
 ## Running Locally with Docker
 ### Prerequisites
