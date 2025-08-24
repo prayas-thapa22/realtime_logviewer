@@ -1,14 +1,12 @@
 #!/bin/sh
-
 echo "Running client lint..."
-cd client
-npm run lint 2>/dev/null || echo "Client lint skipped or failed"
+cd client && npm install > /dev/null 2>&1
+npm run lint || { echo "Client lint failed. Commit aborted."; exit 1; }
 cd ..
 
 echo "Running server lint..."
-cd server
-npm run lint 2>/dev/null || echo "Server lint skipped or failed"
+cd server && npm install > /dev/null 2>&1
+npm run lint || { echo "Server lint failed. Commit aborted."; exit 1; }
 cd ..
 
-echo "Pre-commit hook finished"
-exit 0
+echo "Pre-commit checks passed."
