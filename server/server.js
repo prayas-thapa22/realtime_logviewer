@@ -12,7 +12,6 @@ const quotes = [
   "Fire walk with me",
   "Through the darkness of future past, the magician longs to see.",
   "Where we're from, the birds sing a pretty song and there's always music in the air.",
-  "She's dead. Wrapped in plastic.",
   "How’s Annie?",
   "I only have time for coffee.",
   "That’s a lot of pie for a deputy.",
