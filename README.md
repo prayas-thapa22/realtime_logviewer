@@ -27,3 +27,16 @@ http://localhost:8081
 - Click Pause to stop new logs from displaying
 - Click Resume to continue
 - Click Clear to empty the log window
+
+## Design Choices:
+
+1. WebSocket for Real-Time Updates
+This allows the client to receive live log updates every second without polling. 
+
+2. Separation of Client and Server
+Client and server code are modularized. The server handles log generation and streaming, while the client handles display and user interactions. 
+
+3. Randomized Log Generation with Twin Peaks Quotes
+Logs use randomly selected Twin Peaks quotes and log levels (INFO, WARN, ERROR). 
+
+
