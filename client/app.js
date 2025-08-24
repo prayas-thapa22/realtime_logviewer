@@ -9,17 +9,21 @@ ws.onopen = () => {
 };
 //if receive new log
 ws.onmessage = (event) => {
-//dont show if paused
+  //dont show if paused
   if (paused) return;
+
   const log = JSON.parse(event.data);
   const div = document.createElement("div");
   div.className = `log-${log.level}`;
   //display log message in log container dv
   div.textContent = `[${log.timestamp}] ${log.level}: ${log.message}`;
+
+  // append first
   logContainer.appendChild(div);
 
-// Auto-scroll implementation, only use if user is at bottom
-  if (logContainer.scrollTop + logContainer.clientHeight >= logContainer.scrollHeight - 5) {
+  // autoscroll if within ~20px of the bottom
+  const distanceFromBottom = logContainer.scrollHeight - (logContainer.scrollTop + logContainer.clientHeight);
+  if (distanceFromBottom < 20) {
     logContainer.scrollTop = logContainer.scrollHeight;
   }
 };
