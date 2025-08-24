@@ -1,0 +1,35 @@
+body {
+  font-family: monospace;
+  background: #111;
+  color: #eee;
+  margin: 20px;
+}
+
+#controls {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+
+#logContainer {
+  border: 1px solid #444;
+  padding: 10px;
+  height: 400px;
+  overflow-y: auto;
+  background: #000;
+}
+
+.log-INFO {
+  color: #00ff00; 
+}
+
+.log-WARN {
+  color: #ffff00; 
+}
+
+.log-ERROR {
+  color: #ff4444; 
+}
