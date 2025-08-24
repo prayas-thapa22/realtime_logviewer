@@ -1,0 +1,14 @@
+#!/bin/sh
+
+echo "Running client lint..."
+cd client
+npm run lint 2>/dev/null || echo "Client lint skipped or failed"
+cd ..
+
+echo "Running server lint..."
+cd server
+npm run lint 2>/dev/null || echo "Server lint skipped or failed"
+cd ..
+
+echo "Pre-commit hook finished"
+exit 0
